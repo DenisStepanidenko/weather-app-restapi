@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2087.0" prefWidth="1613.0" style="-fx-background-color: #FFF8DC;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.GetDataAndCity">
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="100.0" prefWidth="1613.0" style="-fx-background-color: #FFDEAD;">
+         <children>
+            <Text fill="#252625d9" layoutX="22.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погодное приложение" textAlignment="RIGHT" wrappingWidth="1050.0">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="88.0" fitWidth="58.0" layoutX="1084.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\stepa\IdeaProjects\weather-app-restapi-master\src\main\resources\com\example\demo\apps.24136.9007199266594719.41c42a33-0b75-48ce-a0d8-762e02786069.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="getData" layoutX="683.0" layoutY="251.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="275.0" style="-fx-background-color: #FFF8DC; -fx-border-color: black; -fx-border-radius: 7px;" text="Узнать погоду">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5825990979366891" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.18602785468101501" green="0.9605262875556946" blue="0.0311281681060791" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="temp" fill="#383535" layoutX="14.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:">
+         <font>
+            <Font name="Monospaced Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      
+      <Text fx:id="tempFeel" fill="#383535" layoutX="14.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ощущается:">
+         <font>
+            <Font name="Monospaced Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      <Text fx:id="windSpeed" fill="#383535" layoutX="14.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Скорость ветра:">
+         <font>
+            <Font name="Monospaced Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      <Text fx:id="humidity" fill="#383535" layoutX="14.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Влажность:">
+         <font>
+            <Font name="Monospaced Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      <Text fx:id="pressure" fill="#383535" layoutX="14.0" layoutY="655.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:">
+         <font>
+            <Font name="Monospaced Bold Italic" size="44.0" />
+         </font>
+      </Text>
+      <TextField fx:id="getCity" focusTraversable="false" layoutX="625.0" layoutY="120.0" prefHeight="100.0" prefWidth="365.0" promptText="Введите город" style="-fx-background-color: #FFF8DC; -fx-border-color: red; -fx-border-radius: 10px;">
+         <font>
+            <Font name="Bookman Old Style Italic" size="40.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <ImageView fitHeight="86.0" fitWidth="138.0" layoutX="1015.0" layoutY="132.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\stepa\IdeaProjects\weather-app-restapi-master\src\main\resources\com\example\demo\png-transparent-lawrence-computer-icons-city-hall-city-building-text-rectangle.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="105.0" layoutX="1008.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\stepa\IdeaProjects\weather-app-restapi-master\src\main\resources\com\example\demo\png-clipart-magnifying-glass-computer-icons-magnification-loupe-glass-technic.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+      </ImageView>
+      <Text fx:id="errorMessage" fill="#383535" layoutX="600.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="483.00006103515625">
+         <font>
+            <Font name="Monospaced Bold Italic" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
